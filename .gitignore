@@ -1,0 +1,14 @@
+# Ignore byte cache
+__pycache__/
+venv/
+
+# Ignore user specific settings and history
+custom_settings.json
+chat_history.pkl
+
+# Ignore BERT and Spacy model for now
+bert_model/
+bert_tokenizer/
+entity_model/
+
+*.log

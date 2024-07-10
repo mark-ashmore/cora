@@ -1,0 +1,49 @@
+{
+    "utterances": [
+        {
+            "patterns": [
+                {
+                    "text": "thank you"
+                }
+            ],
+            "intent": "thank_you",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "thanks"
+                }
+            ],
+            "intent": "thank_you",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "i appreciate it"
+                }
+            ],
+            "intent": "thank_you",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "much obliged"
+                }
+            ],
+            "intent": "thank_you",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "thanks for that"
+                }
+            ],
+            "intent": "thank_you",
+            "count": 1
+        }
+    ]
+}

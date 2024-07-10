@@ -1,0 +1,94 @@
+{
+    "utterances": [
+        {
+            "patterns": [
+                {
+                    "text": "set a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "start a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "open a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "begin a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "I want to set a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "help me set a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "let me start a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "let's configure a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "make a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "can I set up a timer"
+                }
+            ],
+            "intent": "set_timer",
+            "count": 1
+        }
+    ]
+}

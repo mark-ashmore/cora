@@ -1,0 +1,31 @@
+{
+    "labels": [
+        {
+            "label": "LIGHT_NAME",
+            "custom_entities": {
+                "lounge lamp": [
+                    "lounge",
+                    "lounge lamp",
+                    "living room lamp"
+                ],
+                "kitchen": [
+                    "kitchen",
+                    "kitchen cabinet",
+                    "cabinet"
+                ],
+                "living room": [
+                    "living room",
+                    "livingroom",
+                    "living room",
+                    "livingroom"
+                ],
+                "spiro": [
+                    "spiro",
+                    "spiros",
+                    "danielle's lamp"
+                ]
+            }
+        }
+    ],
+    "id": "light_name"
+}

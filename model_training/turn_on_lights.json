@@ -1,0 +1,147 @@
+{
+    "utterances": [
+        {
+            "patterns": [
+                {
+                    "text": "I want to turn on some lights"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn on lights"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn on the "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                },
+                {
+                    "text": " lights"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn the "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                },
+                {
+                    "text": " lights on"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "bring up the "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                },
+                {
+                    "text": " lights"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                },
+                {
+                    "text": " on"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "power on "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "power the "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                },
+                {
+                    "text": " on"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn my "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                },
+                {
+                    "text": " lights on"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn on my "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
+        }
+    ],
+    "entities": [
+        "light_name"
+    ]
+}

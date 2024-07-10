@@ -1,0 +1,19 @@
+{
+    "confidence_threshold": 0.8,
+    "device_index": 0,
+    "energy_threshold": 1000,
+    "longer_wake_word": "hey cora",
+    "phrase_time_limit": 10,
+    "prompt": "simple",
+    "short_wake_words": [
+        "computer",
+        "kora",
+        "cora",
+        "gora"
+    ],
+    "similarity_threshold": 2,
+    "timeout": 5,
+    "wake_word_timeout": 4,
+    "wake_word_time_limit": 4,
+    "default_settings": true
+}
