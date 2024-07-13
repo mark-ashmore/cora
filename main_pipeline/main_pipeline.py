@@ -20,20 +20,11 @@ import spacy
 from spacy.matcher import PhraseMatcher
 
 from expand_training import get_training
-
-_ASSISTANT_PATH = Path(__file__).parent.parent
-_MAIN_PIPELINE_PATH = _ASSISTANT_PATH / "main_pipeline"
-BERT_PATH = _MAIN_PIPELINE_PATH / "bert_model"
-ENTITIES_PATH = _ASSISTANT_PATH / "custom_entities"
-LABELS_PATH = _MAIN_PIPELINE_PATH / "labels.csv"
-REPORT_PATH = _MAIN_PIPELINE_PATH / "report.csv"
-SPACY_MODEL_PATH = _MAIN_PIPELINE_PATH / "entity_model"
-TOKENIZER_PATH = _MAIN_PIPELINE_PATH / "bert_tokenizer"
-TRAINING_PATH = _ASSISTANT_PATH / "model_training"
+from utils import paths
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-f_handler = logging.FileHandler("main_pipeline/main_pipeline.log")
+f_handler = logging.FileHandler(paths.MAIN_PIPELINE_LOG)
 f_format = logging.Formatter(
     "%(asctime)s | %(levelname)s | %(name)s | %(filename)s | %(funcName)s | "
     "%(lineno)s | %(message)s"
@@ -239,14 +230,14 @@ def update_entity_model(entities_path: Path, spacy_model_path: Path) -> None:
 def main():
     """Main for main_pipeline which trains the classifier."""
     update_bert_model(
-        ENTITIES_PATH,
-        TRAINING_PATH,
-        REPORT_PATH,
-        BERT_PATH,
-        TOKENIZER_PATH,
-        LABELS_PATH,
+        paths.ENTITIES_PATH,
+        paths.MODEL_TRAINING_PATH,
+        paths.MODEL_REPORT_PATH,
+        paths.BERT_PATH,
+        paths.TOKENIZER_PATH,
+        paths.LABELS_PATH,
     )
-    update_entity_model(ENTITIES_PATH, SPACY_MODEL_PATH)
+    update_entity_model(paths.ENTITIES_PATH, paths.ENTITY_MODEL_PATH)
 
 
 if __name__ == "__main__":

@@ -25,7 +25,7 @@ from utils import paths
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-f_handler = logging.FileHandler("assistant_main.log")
+f_handler = logging.FileHandler(paths.ASSISTANT_MAIN_LOG)
 f_format = logging.Formatter(
     "%(asctime)s | %(levelname)s | %(name)s | %(filename)s | %(funcName)s | "
     "%(lineno)s | %(message)s"
@@ -77,9 +77,9 @@ class AgentResponse:
         playsound(sound=(paths.AUDIO_PATH / f"{file_name}.mp3"))
 
 
-class DeepThought:
-    """Deep Thought is an agent class that will listen to and speak with a user.
-    Deep Thought can also understand and respond to specific command requests.
+class Cora:
+    """Cora is an agent class that will listen to and speak with a user.
+    Cora can also understand and respond to specific command requests.
     """
 
     def __init__(
@@ -97,7 +97,7 @@ class DeepThought:
         wake_word_timeout: float,
         default_settings: bool,
     ) -> None:
-        """Initialize Deep Thought."""
+        """Initialize Cora."""
         self._bert_path = paths.BERT_PATH
         self._entity_model_path = paths.ENTITY_MODEL_PATH
         self._tokenizer_path = paths.TOKENIZER_PATH
@@ -311,8 +311,8 @@ class DeepThought:
 
     def chat_with_user(self, user_text: str) -> None:
         """Chat with user."""
-        logger.info(f'I heard you say "{user_text}"\n')
-        logger.info("\nWaiting for agent...\n")
+        logger.info(f'I heard you say "{user_text}"')
+        logger.info("Waiting for agent...")
         try:
             response = self.chat.send_message(user_text)
             response_text = re.sub(r"\*.*?\*|\(.*?\)", "", response.text)
@@ -430,11 +430,11 @@ if __name__ == "__main__":
     else:
         with paths.SETTINGS_PATH.open("r", encoding="utf-8") as f:
             agent_settings = json.load(f)
-    deep_thought = DeepThought(**agent_settings)
+    cora = Cora(**agent_settings)
     try:
-        deep_thought.run_wakeword_listen_loop()
-        # deep_thought._check_for_mics()
+        cora.run_wakeword_listen_loop()
+        # cora._check_for_mics()
     except KeyboardInterrupt:
-        deep_thought._write_history()
-        deep_thought._write_custom_settings()
-        logger.info("Closing DeepThought agent.")
+        cora._write_history()
+        cora._write_custom_settings()
+        logger.info("Closing Cora.")

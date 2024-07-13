@@ -17,6 +17,7 @@ TOKENIZER_PATH = NLU_PATH / "bert_tokenizer"
 
 # Model Training
 MODEL_TRAINING_PATH = Path(__file__).parent.parent / "model_training"
+ENTITIES_PATH = Path(__file__).parent.parent / "custom_entities"
 
 # User configs
 CONFIGS_PATH = Path(__file__).parent.parent / "configs"
@@ -24,3 +25,9 @@ CHAT_HISTORY = CONFIGS_PATH / "chat_history.pkl"
 PROMPTS_PATH = CONFIGS_PATH / "prompts"
 SETTINGS_PATH = CONFIGS_PATH / "settings.json"
 CUSTOM_SETTINGS_PATH = CONFIGS_PATH / "custom_settings.json"
+
+# Logs
+LOGS_PATH = Path(__file__).parent.parent / "logs"
+ASSISTANT_MAIN_LOG = LOGS_PATH / "assistant_main.log"
+MAIN_PIPELINE_LOG = LOGS_PATH / "main_pipeline.log"
+MODEL_REPORT_PATH = LOGS_PATH / "model_report.csv"
