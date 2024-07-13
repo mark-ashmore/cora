@@ -1,7 +1,10 @@
 import time
 from python_hue_v2 import Hue, BridgeFinder
 
-HUE = Hue('0017887e2e47.local.', 'YCMWZq3gYGb7sM8f4-m3POpVnHvneg8VPh96EzYV')  # create Hue instance
+HUE = Hue(
+    "0017887e2e47.local.", "YCMWZq3gYGb7sM8f4-m3POpVnHvneg8VPh96EzYV"
+)  # create Hue instance
+
 
 class Lights:
     def __init__(self, hue: Hue) -> None:
@@ -13,7 +16,7 @@ class Lights:
         lights = self.hue.lights
         for light in lights:
             metadata = light.metadata
-            if metadata['name'] == name:
+            if metadata["name"] == name:
                 light.on = True
                 light.brightness = brightness
                 return True
@@ -24,7 +27,7 @@ class Lights:
         lights = self.hue.lights
         for light in lights:
             metadata = light.metadata
-            if metadata['name'] == name:
+            if metadata["name"] == name:
                 light.on = False
                 return True
         return False
@@ -34,17 +37,18 @@ class Lights:
         lights = self.hue.lights
         for light in lights:
             metadata = light.metadata
-            if metadata['name'] == name:
+            if metadata["name"] == name:
                 light.brightness = brightness
                 return True
         return False
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     my_lights = Lights(HUE)
 
-    #my_lights.turn_off_light('Lounge lamp')
-    my_lights.turn_on_light('Living room 1', 100.00)
+    # my_lights.turn_off_light('Lounge lamp')
+    my_lights.turn_on_light("Living room 1", 100.00)
     time.sleep(5)
-    #my_lights.turn_on_light('Lounge lamp')
-    my_lights.change_light_brightness('Living room 1', 0.00)
-    my_lights.turn_off_light('Living room 1')
+    # my_lights.turn_on_light('Lounge lamp')
+    my_lights.change_light_brightness("Living room 1", 0.00)
+    my_lights.turn_off_light("Living room 1")
