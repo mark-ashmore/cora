@@ -58,7 +58,7 @@ class AgentResponse:
         response = client.synthesize_speech(
             input=synthesis_input, voice=self.voice, audio_config=self.audio_config
         )
-        with paths.AGENT_RESPONSE_PATH.open(mode="wb") as out:
+        with paths.AGENT_RESPONSE_PATH.open(mode="wb+") as out:
             out.write(response.audio_content)
         print(TextWrapper(width=80).fill(response_message))
         playsound(sound=paths.AGENT_RESPONSE_PATH)
