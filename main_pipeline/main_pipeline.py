@@ -19,7 +19,7 @@ from transformers import get_linear_schedule_with_warmup
 import spacy
 from spacy.matcher import PhraseMatcher
 
-from expand_training import get_training
+from main_pipeline.expand_training import get_training
 from utils import paths
 
 logging.basicConfig(level=logging.INFO)
@@ -227,8 +227,8 @@ def update_entity_model(entities_path: Path, spacy_model_path: Path) -> None:
     logger.info("Entity model updated at %s", str(datetime.now().strftime("%H:%M:%S")))
 
 
-def main():
-    """Main for main_pipeline which trains the classifier."""
+def update_agent_models():
+    """Update Bert and Spacy models for agent use."""
     update_bert_model(
         paths.ENTITIES_PATH,
         paths.MODEL_TRAINING_PATH,
@@ -238,7 +238,3 @@ def main():
         paths.LABELS_PATH,
     )
     update_entity_model(paths.ENTITIES_PATH, paths.ENTITY_MODEL_PATH)
-
-
-if __name__ == "__main__":
-    main()

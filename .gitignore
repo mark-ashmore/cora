@@ -16,3 +16,5 @@ entity_model/
 
 # Ignore log files
 *.log
+model_report.csv
+labels.csv

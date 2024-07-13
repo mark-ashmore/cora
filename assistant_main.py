@@ -1,3 +1,4 @@
+import argparse
 import json
 import logging
 import os
@@ -6,6 +7,7 @@ import re
 import sys
 from itertools import pairwise
 from textwrap import TextWrapper
+from time import sleep
 from typing import Any
 
 import google.generativeai as genai
@@ -22,6 +24,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 
 from agent_actions.light_control import HUE, Lights
 from utils import paths
+from main_pipeline.main_pipeline import update_agent_models
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -397,6 +400,13 @@ class Cora:
     def run_wakeword_listen_loop(self) -> None:
         """Run wakeword listen loop."""
         if self.start_up:
+            try:
+                with sr.Microphone(device_index=self.device_index) as source:
+                    self.recognizer.adjust_for_ambient_noise(source, duration=1)
+            except AttributeError:
+                logger.debug("No microphone detected.")
+                self._check_for_mics()
+            sleep(1)
             playsound(paths.WAKE_SOUND)
             self.start_up = False
         while True:
@@ -424,17 +434,24 @@ class Cora:
 
 
 if __name__ == "__main__":
-    if paths.CUSTOM_SETTINGS_PATH.exists():
-        with paths.CUSTOM_SETTINGS_PATH.open("r", encoding="utf-8") as f:
-            agent_settings = json.load(f)
+    parser = argparse.ArgumentParser(description="Launch agent in specific modes.")
+    parser.add_argument(
+        "--mode", default="on", type=str, help="A model to launch the agent in"
+    )
+    args = parser.parse_args()
+    if args.mode == "train":
+        update_agent_models()
     else:
-        with paths.SETTINGS_PATH.open("r", encoding="utf-8") as f:
-            agent_settings = json.load(f)
-    cora = Cora(**agent_settings)
-    try:
-        cora.run_wakeword_listen_loop()
-        # cora._check_for_mics()
-    except KeyboardInterrupt:
-        cora._write_history()
-        cora._write_custom_settings()
-        logger.info("Closing Cora.")
+        if paths.CUSTOM_SETTINGS_PATH.exists():
+            with paths.CUSTOM_SETTINGS_PATH.open("r", encoding="utf-8") as f:
+                agent_settings = json.load(f)
+        else:
+            with paths.SETTINGS_PATH.open("r", encoding="utf-8") as f:
+                agent_settings = json.load(f)
+        cora = Cora(**agent_settings)
+        try:
+            cora.run_wakeword_listen_loop()
+        except KeyboardInterrupt:
+            cora._write_history()
+            cora._write_custom_settings()
+            logger.info("Closing Cora.")
