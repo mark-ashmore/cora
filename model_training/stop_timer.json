@@ -1,0 +1,455 @@
+{
+    "utterances": [
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "delete the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "remove the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "cancel the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "stop the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "end the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "turn off the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "disable the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "kill the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "scrap the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "discard the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "delete that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "remove that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "cancel that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "stop that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "end that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "turn off that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "disable that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "kill that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "scrap that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "discard that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "can you delete the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "could you remove the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "would you cancel the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "can you stop the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "could you end the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "would you turn off the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "can you disable the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "could you kill the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "would you scrap the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "can you discard the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to delete the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to remove the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to cancel the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to stop the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to end the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to turn off the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to disable the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to kill the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to scrap the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to discard the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to get rid of the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to end that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to stop that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i want to turn off that timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i need to delete the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i need to remove the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i need to cancel the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i need to stop the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i need to end the timer"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "stop_timer",
+            "patterns": [
+                {
+                    "text": "i need to get rid of the timer"
+                }
+            ]
+        }
+    ],
+    "entities": []
+}

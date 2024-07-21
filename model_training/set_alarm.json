@@ -1,94 +1,320 @@
 {
     "utterances": [
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "set an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "start an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "open an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "begin an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "I want to set an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "help me set an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "let me start an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "let's configure an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "make an alarm"
                 }
-            ],
-            "intent": "set_alarm",
-            "count": 1
+            ]
         },
         {
+            "count": 1,
+            "intent": "set_alarm",
             "patterns": [
                 {
                     "text": "can I set up an alarm"
                 }
-            ],
+            ]
+        },
+        {
+            "count": 1,
             "intent": "set_alarm",
-            "count": 1
+            "patterns": [
+                {
+                    "text": "initiate an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "activate an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "turn on an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "turn on a alarm clock"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "start the alarm clock"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "get the alarm going"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "start alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "initiate an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "set the alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "start an alarm for this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I need to set an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "can you start an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "could you get an alarm started for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I want to start an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I'd like to set an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I'd like to start an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I need an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "can you get an alarm started"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "would you mind setting an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "would you mind starting an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I need an alarm for this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I'm going to need an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "I want to configure an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "can you set up an alarm"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "set_alarm",
+            "patterns": [
+                {
+                    "text": "would you set up an alarm for me"
+                }
+            ]
         }
-    ]
+    ],
+    "entities": []
 }

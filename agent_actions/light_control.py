@@ -1,15 +1,25 @@
-import time
-from python_hue_v2 import Hue, BridgeFinder
+"""A class for Hue light controls."""
 
-HUE = Hue(
-    "0017887e2e47.local.", "YCMWZq3gYGb7sM8f4-m3POpVnHvneg8VPh96EzYV"
-)  # create Hue instance
+import json
+import os
+from python_hue_v2 import Hue, BridgeFinder
+from utils import paths
 
 
 class Lights:
-    def __init__(self, hue: Hue) -> None:
-        """Class for Hue light controls."""
-        self.hue = hue
+    """Class for Hue light controls."""
+
+    light_app_names = {
+        "all": ["all"],
+        "bridge": ["Bridge"],
+        "engineering": ["Engineering"],
+        "fan": ["Fan 1", "Fan 2"],
+        "living room": ["Living room 1", "Living room 2"],
+        "spyro": ["Spyro"],
+    }
+
+    def __init__(self) -> None:
+        self.hue = Hue(os.environ["HUE_IP_ADDRESS"], os.environ["HUE_APPLICATION_KEY"])
 
     def turn_on_light(self, name: str, brightness: float = 100.00) -> bool:
         """Turn on a Hue light by its name."""
@@ -42,13 +52,30 @@ class Lights:
                 return True
         return False
 
+    @staticmethod
+    def get_light_value(entity_type: str, entity_span: str) -> str:
+        """Get light value."""
+        light_name_dict = json.load(
+            (paths.ENTITIES_PATH / "light_name.json").open("r", encoding="utf-8")
+        )
+        labels = light_name_dict["labels"]
+        for label in labels:
+            if label["label"] == entity_type:
+                custom_entities = label["custom_entities"]
+        if custom_entities:
+            for entity_value, entity_synonyms in custom_entities.items():
+                if entity_span in entity_synonyms:
+                    return entity_value
+        return ""
 
-if __name__ == "__main__":
-    my_lights = Lights(HUE)
-
-    # my_lights.turn_off_light('Lounge lamp')
-    my_lights.turn_on_light("Living room 1", 100.00)
-    time.sleep(5)
-    # my_lights.turn_on_light('Lounge lamp')
-    my_lights.change_light_brightness("Living room 1", 0.00)
-    my_lights.turn_off_light("Living room 1")
+    @staticmethod
+    def get_light_names(entity_type: str, entity_span: str) -> list:
+        if entity_span == "all":
+            return [
+                light for values in Lights.light_app_names.values() for light in values
+            ]
+        if entity_type and entity_span:
+            light_value = Lights.get_light_value(entity_type, entity_span)
+            if light_value:
+                return Lights.light_app_names[light_value]
+        return []

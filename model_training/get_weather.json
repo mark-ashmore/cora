@@ -2,316 +2,352 @@
     "utterances": [
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "set a timer"
+                    "text": "what's the weather today"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "start a timer"
+                    "text": "can you tell me the weather"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "open a timer"
+                    "text": "how's the weather"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "begin a timer"
+                    "text": "what's the weather like"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I want to set a timer"
+                    "text": "what's it like outside"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "help me set a timer"
+                    "text": "what are the weather conditions"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "let me start a timer"
+                    "text": "what's the forecast"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "let's configure a timer"
+                    "text": "what's the weather going to be like"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "make a timer"
+                    "text": "what's the temperature"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "can I set up a timer"
+                    "text": "how hot is it"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "initiate a timer"
+                    "text": "how cold is it"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "activate a timer"
+                    "text": "is it going to rain"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "turn on a timer"
+                    "text": "will it snow"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "turn on a clock timer"
+                    "text": "is it windy"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "start the clock timer"
+                    "text": "is it sunny"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "get the timer going"
+                    "text": "is it cloudy"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "start timing"
+                    "text": "what's the humidity like"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "initiate a timer"
+                    "text": "what's the uv index"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "set the timer"
+                    "text": "what's the air quality"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "start timing this"
+                    "text": "any chance of rain today"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I need to set a timer"
+                    "text": "will i need an umbrella"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "can you start a timer"
+                    "text": "should i wear a jacket"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "could you time this for me"
+                    "text": "how's the weather looking"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I want to start a timer"
+                    "text": "give me the weather update"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I'd like to set a timer"
+                    "text": "what's the latest on the weather"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I'd like to start a timer"
+                    "text": "how's the weather shaping up"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I need a timer"
+                    "text": "what's the weather situation"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "can you get a timer started"
+                    "text": "what's the current weather"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "would you mind setting a timer"
+                    "text": "what's the weather right now"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "would you mind starting a timer"
+                    "text": "what are the chances of precipitation"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I need a timer for this"
+                    "text": "is there a storm coming"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I'm going to need a timer"
+                    "text": "is it hot enough for shorts"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "I want to configure a timer"
+                    "text": "is it cold enough for a sweater"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "can you set up a timer"
+                    "text": "what's the windchill"
                 }
             ]
         },
         {
             "count": 1,
-            "intent": "set_timer",
+            "intent": "get_weather",
             "patterns": [
                 {
-                    "text": "would you set up a timer for me"
+                    "text": "what's the heat index"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "get_weather",
+            "patterns": [
+                {
+                    "text": "will there be any severe weather"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "get_weather",
+            "patterns": [
+                {
+                    "text": "should i expect any weather alerts"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "get_weather",
+            "patterns": [
+                {
+                    "text": "what's the weather warning"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "get_weather",
+            "patterns": [
+                {
+                    "text": "how are conditions outside"
                 }
             ]
         }

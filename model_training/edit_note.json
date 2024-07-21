@@ -1,0 +1,455 @@
+{
+    "utterances": [
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "update a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "edit a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "revise a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "modify a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "change a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "amend a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "adjust a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "update my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "edit my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "revise my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "modify my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "change my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "amend my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "adjust my note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "can you update a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "could you edit a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "would you revise a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "can you modify a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "could you change a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "would you amend a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "can you adjust a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to update a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to edit a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to revise a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to modify a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to change a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to amend a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want to adjust a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to update a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to edit a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to revise a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to modify a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to change a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to amend a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need to adjust a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to update a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to edit a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to revise a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to modify a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to change a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to amend a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i'd like to adjust a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "can you make changes to a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "could you make edits to a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "would you alter a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "can you modify this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "could you change this note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "would you amend this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i want you to edit a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "edit_note",
+            "patterns": [
+                {
+                    "text": "i need you to modify a note"
+                }
+            ]
+        }
+    ],
+    "entities": []
+}

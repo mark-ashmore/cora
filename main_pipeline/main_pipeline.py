@@ -16,11 +16,16 @@ from torch.optim import AdamW, lr_scheduler
 from torch.utils.data import DataLoader, TensorDataset
 from transformers import BertTokenizer, BertForSequenceClassification
 from transformers import get_linear_schedule_with_warmup
+from transformers import logging as transformers_logging
 import spacy
 from spacy.matcher import PhraseMatcher
 
 from main_pipeline.expand_training import get_training
 from utils import paths
+
+# NOTE: This is here to silence some boilerplate warnings. Comment out if you make
+# updates to bert training logic for full error messages.
+transformers_logging.set_verbosity_error()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

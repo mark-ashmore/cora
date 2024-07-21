@@ -1,0 +1,455 @@
+{
+    "utterances": [
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "delete a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "remove a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "discard a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "erase a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "get rid of a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "delete this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "remove this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "discard this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "erase this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "get rid of this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you delete a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "could you remove this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "would you discard this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you erase a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "could you get rid of a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want to delete a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want to remove a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want to discard a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want to erase a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want to get rid of a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need to delete a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need to remove a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need to discard a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need to erase a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need to get rid of a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like to delete a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like to remove a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like to discard a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like to erase a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like to get rid of a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you delete this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "could you remove this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "would you discard this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you erase this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "could you get rid of this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want you to delete a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need you to remove a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like you to discard a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you trash a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "could you delete this note file"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "would you remove this note document"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "please discard this note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "erase this note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "get rid of this note, please"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you clean up a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want to clear out a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i need to clear out a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i'd like to clear out a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "i want you to clean up a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "delete_note",
+            "patterns": [
+                {
+                    "text": "can you clear a note for me"
+                }
+            ]
+        }
+    ],
+    "entities": []
+}

@@ -3,11 +3,6 @@
         {
             "label": "LIGHT_NAME",
             "custom_entities": {
-                "lounge lamp": [
-                    "lounge",
-                    "lounge lamp",
-                    "living room lamp"
-                ],
                 "kitchen": [
                     "kitchen",
                     "kitchen cabinet",
@@ -19,10 +14,36 @@
                     "living room",
                     "livingroom"
                 ],
-                "spiro": [
+                "spyro": [
                     "spiro",
+                    "spyro",
                     "spiros",
+                    "spyros",
+                    "spy room",
+                    "spy rooms",
                     "danielle's lamp"
+                ],
+                "bridge": [
+                    "bridge",
+                    "bridge lamp",
+                    "lounge",
+                    "lounge lamp"
+                ],
+                "engineering": [
+                    "engineering",
+                    "engineering lamp"
+                ],
+                "fan": [
+                    "danielle's fan",
+                    "danielle's",
+                    "danielle's room",
+                    "fan",
+                    "fanlight",
+                    "fan control"
+                ],
+                "all": [
+                    "all",
+                    "every"
                 ]
             }
         }

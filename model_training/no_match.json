@@ -1,0 +1,743 @@
+{
+    "utterances": [
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "hello! how are you today"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you tell me a joke"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what time is it in tokyo right now"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i cook a perfect steak"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the latest news headlines"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you recommend a good movie"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's the capital of brazil"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i convert miles to kilometers"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the symptoms of the flu"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "i'm having trouble logging into my account"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you help me track my order"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i reset my password"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "i want to cancel my subscription"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "find flights from new york to london"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the best hotels in paris"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you recommend things to do in rome"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i get from the airport to downtown"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's the exchange rate for euros"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "explain the theory of relativity"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the benefits of meditation"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i solve this math problem"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you help me with my english grammar"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the different types of clouds"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "play some relaxing music"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "tell me a story"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are some fun facts about animals"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "suggest a recipe for dinner"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you recommend a book to read"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "remind me to buy milk on my way home"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's on my schedule for today"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "add \"doctor's appointment\" to my calendar"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "create a shopping list for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "write a poem about love"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "compose a short story with a surprise ending"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "describe a beautiful landscape"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "imagine a world without technology"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "create a character for a video game"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how's your day going"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's your favorite color"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "do you like to read"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what kind of music do you listen to"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "have you ever traveled outside of the country"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what is the meaning of life"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "is there free will"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what is consciousness"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what happens after we die"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what is the nature of reality"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "good morning! what's the plan for today"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "hey, can you help me find a recipe for lasagna"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "i'm bored can you suggest something fun to do"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "do you know any good jokes about cats"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's the traffic like on the highway right now"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i connect my phone to the wi-fi"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's the best smartphone on the market right now"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you troubleshoot my laptop's slow internet connection"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the latest features of the new smartwatch"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i set up a smart home system"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are some tips for stress management"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you recommend a healthy meal plan"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the benefits of yoga and meditation"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how much water should i drink each day"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the symptoms of a heart attack"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "who won the world series last year"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the rules of cricket"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you create a workout routine for beginners"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the health benefits of running"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "who is your favorite athlete and why"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what is the current stock market index"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you explain cryptocurrency to me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "how do i create a budget and stick to it"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the different types of investment accounts"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what is inflation and how does it affect me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the latest developments in the russia-ukraine conflict"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you summarize the new environmental protection bill"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the top stories in entertainment news today"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "who are the leading candidates in the upcoming presidential election"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the implications of the recent supreme court ruling"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "who is the most popular tiktok influencer right now"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what's the latest fashion trend"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "can you recommend a new podcast to listen to"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "what are the top trending memes on social media"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "no_match",
+            "patterns": [
+                {
+                    "text": "who is your favorite celebrity and why"
+                }
+            ]
+        }
+    ],
+    "entities": []
+}

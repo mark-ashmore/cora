@@ -31,3 +31,7 @@ LOGS_PATH = Path(__file__).parent.parent / "logs"
 ASSISTANT_MAIN_LOG = LOGS_PATH / "assistant_main.log"
 MAIN_PIPELINE_LOG = LOGS_PATH / "main_pipeline.log"
 MODEL_REPORT_PATH = LOGS_PATH / "model_report.csv"
+
+# Actions
+ACTIONS_PATH = Path(__file__).parent.parent / "agent_actions"
+LIGHT_APP_NAMES = ACTIONS_PATH / "light_app_names.json"

@@ -16,7 +16,8 @@ pip install git+https://github.com/killjoy1221/playsound.git
 
 This will install the package directly from github.
 
-You will also need a spacy model for entity recognition. I'm using the en_core_web_sm model by default since it offers what we need.
+You will also need a spacy model for entity recognition. I'm using the en_core_web_sm
+model by default since it offers what we need.
 
 Run the following to dowload that model:
 
@@ -31,3 +32,9 @@ You will need to train the entity and bert models. This can be done by running:
 ```
 python main_pipeline/main_pipeline.py
 ```
+
+## Hue
+
+Cora supports light controls for Hue brand lights. You will need to set the
+enviromentment variables `HUE_IP_ADDRESS` and `HUE_APPLICATION_KEY` to your Hue
+IP address and application key. Check the Hue documention for how to find these values.

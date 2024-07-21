@@ -139,6 +139,19 @@
             ],
             "intent": "turn_on_lights",
             "count": 1
+        },
+        {
+            "patterns": [
+                {
+                    "text": "turn on "
+                },
+                {
+                    "text": "living room",
+                    "entity": "light_name"
+                }
+            ],
+            "intent": "turn_on_lights",
+            "count": 1
         }
     ],
     "entities": [

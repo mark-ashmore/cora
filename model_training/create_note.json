@@ -1,0 +1,437 @@
+{
+    "utterances": [
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "start a new note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "create a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "begin a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "open a new note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "jot this down"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "remember this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "make a note of this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "write this down"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "note this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "can you take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "could you start a new note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "would you create a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "can you jot this down for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "please remember this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "would you mind making a note of this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "could you write this down"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "please note this down"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i want to write a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i want to take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i need to write a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i need to take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i'd like to write a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i'd like to take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i want you to take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i need you to take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i'd like you to take a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "can you record a note for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "could you document this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "please record this"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "document this for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i want to make a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i want to create a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i need to make a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i need to create a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i'd like to make a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i'd like to create a note"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "start a note file"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "create a new note file"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "open a note document"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "make a new note document"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i want to start a new note file"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "i need to create a new note file"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "open a document for notes"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "create a document for me to take notes"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "can you start a note file for me"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "would you open a note document"
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "intent": "create_note",
+            "patterns": [
+                {
+                    "text": "please make a new note document"
+                }
+            ]
+        }
+    ],
+    "entities": []
+}

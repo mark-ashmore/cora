@@ -22,7 +22,7 @@ from Levenshtein import distance
 from playsound import playsound
 from transformers import BertTokenizer, BertForSequenceClassification
 
-from agent_actions.light_control import HUE, Lights
+from agent_actions.light_control import Lights
 from utils import paths
 from main_pipeline.main_pipeline import update_agent_models
 
@@ -284,27 +284,87 @@ class Cora:
                 ]
         return return_matches
 
+    def test_predictions(self) -> None:
+        try:
+            while True:
+                user_text = input("utterance : ")
+                if user_text:
+                    prediction = self.predict_intent(user_text)
+                    print(f"Prediction: {prediction}")
+                    if prediction != "no_match":
+                        entities = self.get_entity_values(user_text, prediction)
+                        print(f"Entities: {entities}")
+        except KeyboardInterrupt:
+            sys.exit("\nExiting prediction testing.")
+
     def perform_action(self, intent: str, entities: list, user_input: str) -> None:
         """Perform user action."""
         logger.debug(f"Intent: {intent}")
         logger.debug(f"Entities: {entities}")
         logger.debug(f"User input: {user_input}")
+        entity_type, entity_span = "", ""
+        if entities:
+            spans, entity_types, _, _ = zip(*entities)
+            index = spans.index(max(spans, key=len))
+            entity_type = entity_types[index]
+            entity_span = spans[index]
         if intent == "turn_on_lights":
-            lights = Lights(HUE)
-            try:
-                lights.turn_on_light("Living room 1")
-                lights.turn_on_light("Living room 2")
-                self.agent_response.say("Turning on the lights.")
-            except ConnectionError:
-                self.agent_response.play_message(file_name="hue_connection_error")
+            light_names = []
+            lights = Lights()
+            light_names = lights.get_light_names(entity_type, entity_span)
+            if light_names:
+                try:
+                    for light_name in light_names:
+                        lights.turn_on_light(light_name)
+                    self.agent_response.play_message(file_name="turning_on_lights")
+                except ConnectionError:
+                    self.agent_response.play_message(file_name="hue_connection_error")
+            else:
+                self.agent_response.play_message(file_name="which_light_on")
+                light_name = self.listen_for_input().strip().lower()
+                if light_name:
+                    light_names = lights.get_light_names("LIGHT_NAME", light_name)
+                    if light_names:
+                        try:
+                            for light_name in light_names:
+                                lights.turn_on_light(light_name)
+                            self.agent_response.play_message(
+                                file_name="turning_on_lights"
+                            )
+                        except ConnectionError:
+                            self.agent_response.play_message(
+                                file_name="hue_connection_error"
+                            )
+                else:
+                    self.agent_response.play_message(file_name="light_not_found")
         elif intent == "turn_off_lights":
-            lights = Lights(HUE)
-            try:
-                lights.turn_off_light("Living room 1")
-                lights.turn_off_light("Living room 2")
-                self.agent_response.say("Turning off the lights.")
-            except ConnectionError:
-                self.agent_response.play_message(file_name="hue_connection_error")
+            lights = Lights()
+            light_names = lights.get_light_names(entity_type, entity_span)
+            if light_names:
+                try:
+                    for light_name in light_names:
+                        lights.turn_off_light(light_name)
+                    self.agent_response.play_message(file_name="turning_off_lights")
+                except ConnectionError:
+                    self.agent_response.play_message(file_name="hue_connection_error")
+            else:
+                self.agent_response.play_message(file_name="which_light_off")
+                light_name = self.listen_for_input().strip().lower()
+                if light_name:
+                    light_names = lights.get_light_names("LIGHT_NAME", light_name)
+                    if light_names:
+                        try:
+                            for light_name in light_names:
+                                lights.turn_off_light(light_name)
+                            self.agent_response.play_message(
+                                file_name="turning_off_lights"
+                            )
+                        except ConnectionError:
+                            self.agent_response.play_message(
+                                file_name="hue_connection_error"
+                            )
+                else:
+                    self.agent_response.play_message(file_name="light_not_found")
         else:
             self.agent_response.say(
                 f'I heard you say "{user_input}" and '
@@ -359,13 +419,12 @@ class Cora:
                 return text
         return text.strip()
 
-    def chat_with_agent(self, user_input: str, greeting: bool = False) -> str:
+    def chat_with_agent(self, user_input: str) -> str:
         """Greet user with message and listen to response."""
         if user_input and user_input != ".":
             logger.info('Agent heard "%s"', user_input)
             prediction = self.predict_intent(user_input)
-            logger.info("Intent: %s", prediction)
-            if (prediction != "no_match") and not greeting:
+            if prediction != "no_match":
                 logger.info("Taking an action")
                 entities = self.get_entity_values(user_input, prediction)
                 self.perform_action(prediction, entities, user_input)
@@ -373,23 +432,21 @@ class Cora:
                 logger.info("Having a chat with user")
                 self.chat_with_user(user_input)
             return "active_user"
-        else:
-            return "no_input"
+        return "no_input"
 
     def loop_conversation(self) -> str:
         """Loop conversation."""
-        user_status = "user_inactive"
         for _ in range(5):
             user_status = self.chat_with_agent(self.listen_for_input())
             if user_status == "active_user":
-                break
+                return user_status
         if user_status == "no_input":
             user_status = "user_inactive"
         return user_status
 
     def run_conversation(self) -> None:
         """Run conversation."""
-        user_status = self.chat_with_agent("Hello", greeting=True)
+        user_status = "active_user"
         while self.active_listening:
             while user_status == "active_user":
                 user_status = self.chat_with_agent(self.listen_for_input())
@@ -449,9 +506,12 @@ if __name__ == "__main__":
             with paths.SETTINGS_PATH.open("r", encoding="utf-8") as f:
                 agent_settings = json.load(f)
         cora = Cora(**agent_settings)
-        try:
-            cora.run_wakeword_listen_loop()
-        except KeyboardInterrupt:
-            cora._write_history()
-            cora._write_custom_settings()
-            logger.info("Closing Cora.")
+        if args.mode == "predict":
+            cora.test_predictions()
+        else:
+            try:
+                cora.run_wakeword_listen_loop()
+            except KeyboardInterrupt:
+                cora._write_history()
+                cora._write_custom_settings()
+                logger.info("Closing Cora.")
