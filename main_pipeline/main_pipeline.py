@@ -27,6 +27,10 @@ from utils import paths
 # updates to bert training logic for full error messages.
 transformers_logging.set_verbosity_error()
 
+if not paths.MAIN_PIPELINE_LOG.exists():
+    paths.MAIN_PIPELINE_LOG.parent.mkdir(parents=True, exist_ok=True)
+    paths.MAIN_PIPELINE_LOG.touch()
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 f_handler = logging.FileHandler(paths.MAIN_PIPELINE_LOG)
