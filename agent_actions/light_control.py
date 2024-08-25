@@ -23,7 +23,7 @@ class Lights:
     }
 
     def __init__(self) -> None:
-        self.hue = Hue(os.environ["HUE_IP_ADDRESS"], os.environ["HUE_APPLICATION_KEY"])
+        self.hue = Hue(os.environ["HUE_HOST_NAME"], os.environ["HUE_APPLICATION_KEY"])
 
     async def turn_on_kitchen(self):
         dev = await Discover.discover_single(os.environ["KASA_ADDRESS"])
