@@ -16,26 +16,18 @@ pip install -r requirements.txt
 If you are on a Debian/Raspbian/Ubuntu you will need to run:
 
 ```sh
-sudo apt-get install libffi-dev
+sudo apt-get install libffi-dev portaudio19-dev python3-pyaudio
 ```
 
 You should also run:
 
 ```sh
-sudo apt install libgirepository1.0-dev
+sudo apt install libgirepository1.0-dev libcairo2-dev
 ```
 
-```sh
-sudo apt install libcairo2-dev
-```
-
-```sh
-sudo apt-get install portaudio19-dev
-```
-
-```sh
-sudo apt-get install python3-pyaudio
-```
+You should also have
+[GStreamer](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
+installed.
 
 ### Mac Installation
 
@@ -48,7 +40,7 @@ pip install pyobjc
 Linux will need to run:
 
 ```sh
-pip install pyobject
+pip install pygobject
 ```
 
 ### General Installation
@@ -95,8 +87,8 @@ project. You will need the following:
 ## Hue
 
 Cora supports light controls for Hue brand lights. You will need to set the
-enviromentment variables `HUE_IP_ADDRESS` and `HUE_APPLICATION_KEY` to your Hue
-IP address and application key. Check the Hue documention for how to find these values.
+enviromentment variables `HUE_HOST_NAME` and `HUE_APPLICATION_KEY` to your Hue IP address
+and application key. Check the Hue documention for how to find these values.
 
 ## Model training
 
@@ -112,4 +104,12 @@ You can also test what the classifier model will return by running:
 
 ```sh
 python assistant_main.py --mode=predict
+```
+
+## Lauching CORA
+
+To launch Cora as your personal assistant, run:
+
+```sh
+python assistant_main.py [--mode=on]
 ```

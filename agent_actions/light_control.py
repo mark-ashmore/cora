@@ -1,8 +1,11 @@
-"""A class for Hue light controls."""
+"""A class for Hue light controls and Kasa plug controls."""
 
 import json
 import os
-from python_hue_v2 import Hue, BridgeFinder
+
+from python_hue_v2 import Hue
+from kasa import Discover
+
 from utils import paths
 
 
@@ -16,10 +19,21 @@ class Lights:
         "fan": ["Fan 1", "Fan 2"],
         "living room": ["Living room 1", "Living room 2"],
         "spyro": ["Spyro"],
+        "kitchen": ["kitchen"],
     }
 
     def __init__(self) -> None:
         self.hue = Hue(os.environ["HUE_IP_ADDRESS"], os.environ["HUE_APPLICATION_KEY"])
+
+    async def turn_on_kitchen(self):
+        dev = await Discover.discover_single(os.environ["KASA_ADDRESS"])
+        await dev.turn_on()
+        await dev.update()
+
+    async def turn_off_kitchen(self):
+        dev = await Discover.discover_single(os.environ["KASA_ADDRESS"])
+        await dev.turn_off()
+        await dev.update()
 
     def turn_on_light(self, name: str, brightness: float = 100.00) -> bool:
         """Turn on a Hue light by its name."""

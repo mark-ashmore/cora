@@ -238,6 +238,16 @@ def update_entity_model(entities_path: Path, spacy_model_path: Path) -> None:
 
 def update_agent_models():
     """Update Bert and Spacy models for agent use."""
+    model_paths = [
+        paths.BERT_PATH,
+        paths.TOKENIZER_PATH,
+        paths.LABELS_PATH,
+        paths.ENTITY_MODEL_PATH,
+    ]
+    for path in model_paths:
+        if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.touch()
     update_bert_model(
         paths.ENTITIES_PATH,
         paths.MODEL_TRAINING_PATH,

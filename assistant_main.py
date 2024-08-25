@@ -1,4 +1,5 @@
 import argparse
+import asyncio
 import json
 import logging
 import os
@@ -25,6 +26,11 @@ from transformers import BertTokenizer, BertForSequenceClassification
 from agent_actions.light_control import Lights
 from utils import paths
 from main_pipeline.main_pipeline import update_agent_models
+
+if not paths.ASSISTANT_MAIN_LOG.exists():
+    if not paths.MAIN_PIPELINE_LOG.parent.exists():
+        paths.MAIN_PIPELINE_LOG.parent.mkdir(parents=True, exist_ok=True)
+    paths.MAIN_PIPELINE_LOG.touch()
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -313,12 +319,18 @@ class Cora:
             lights = Lights()
             light_names = lights.get_light_names(entity_type, entity_span)
             if light_names:
-                try:
-                    for light_name in light_names:
-                        lights.turn_on_light(light_name)
-                    self.agent_response.play_message(file_name="turning_on_lights")
-                except ConnectionError:
-                    self.agent_response.play_message(file_name="hue_connection_error")
+                if "kitchen" in light_names:
+                    asyncio.run(lights.turn_on_kitchen())
+                    light_names.remove("kitchen")
+                if light_names:
+                    try:
+                        for light_name in light_names:
+                            lights.turn_on_light(light_name)
+                        self.agent_response.play_message(file_name="turning_on_lights")
+                    except ConnectionError:
+                        self.agent_response.play_message(
+                            file_name="hue_connection_error"
+                        )
             else:
                 self.agent_response.play_message(file_name="which_light_on")
                 light_name = self.listen_for_input().strip().lower()
@@ -341,12 +353,18 @@ class Cora:
             lights = Lights()
             light_names = lights.get_light_names(entity_type, entity_span)
             if light_names:
-                try:
-                    for light_name in light_names:
-                        lights.turn_off_light(light_name)
-                    self.agent_response.play_message(file_name="turning_off_lights")
-                except ConnectionError:
-                    self.agent_response.play_message(file_name="hue_connection_error")
+                if "kitchen" in light_names:
+                    asyncio.run(lights.turn_off_kitchen())
+                    light_names.remove("kitchen")
+                if light_names:
+                    try:
+                        for light_name in light_names:
+                            lights.turn_off_light(light_name)
+                        self.agent_response.play_message(file_name="turning_off_lights")
+                    except ConnectionError:
+                        self.agent_response.play_message(
+                            file_name="hue_connection_error"
+                        )
             else:
                 self.agent_response.play_message(file_name="which_light_off")
                 light_name = self.listen_for_input().strip().lower()
@@ -367,8 +385,7 @@ class Cora:
                     self.agent_response.play_message(file_name="light_not_found")
         else:
             self.agent_response.say(
-                f'I heard you say "{user_input}" and '
-                f"identified the intent {intent}. "
+                f'I heard you say "{user_input}" and identified the intent {intent}. '
                 "Unfortunately I can't help with that yet"
             )
 
@@ -509,9 +526,12 @@ if __name__ == "__main__":
         if args.mode == "predict":
             cora.test_predictions()
         else:
-            try:
-                cora.run_wakeword_listen_loop()
-            except KeyboardInterrupt:
-                cora._write_history()
-                cora._write_custom_settings()
-                logger.info("Closing Cora.")
+            reboot = True
+            while reboot:
+                try:
+                    cora.run_wakeword_listen_loop()
+                except KeyboardInterrupt:
+                    cora._write_history()
+                    cora._write_custom_settings()
+                    logger.info("Closing Cora.")
+                    reboot = False
